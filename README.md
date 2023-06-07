@@ -23,12 +23,15 @@ This project is a web-based application developed to enable users to create ques
   ```
    ## Screenshots
 
- ![Screenshot 1](https://github.com/ashish88pal/csvUploadCN/blob/f96dd66bf424a60ab828597ea3ccfb61f1de9e03/screenshots/ss1.png?raw=true)
+ ![Screenshot 1](https://github.com/ashish88pal/polling_api_CN/blob/aa122dc3b333496375ac6877aeb508d3e9ad7592/screenshots/createOption.png?raw=true)
+  ![Screenshot 2](https://github.com/ashish88pal/polling_api_CN/blob/aa122dc3b333496375ac6877aeb508d3e9ad7592/screenshots/createQuestion.png?raw=true)
+   ![Screenshot 3](https://github.com/ashish88pal/polling_api_CN/blob/aa122dc3b333496375ac6877aeb508d3e9ad7592/screenshots/deleteOption.png?raw=true)
+    ![Screenshot 4](https://github.com/ashish88pal/polling_api_CN/blob/aa122dc3b333496375ac6877aeb508d3e9ad7592/screenshots/deleteQuestion.png?raw=true)
+     ![Screenshot 5](https://github.com/ashish88pal/polling_api_CN/blob/aa122dc3b333496375ac6877aeb508d3e9ad7592/screenshots/getAllQuestions.png?raw=true)
+      ![Screenshot 6](https://github.com/ashish88pal/polling_api_CN/blob/aa122dc3b333496375ac6877aeb508d3e9ad7592/screenshots/vote.png?raw=true)
 
-  ![Screenshot 2](https://github.com/ashish88pal/csvUploadCN/blob/f96dd66bf424a60ab828597ea3ccfb61f1de9e03/screenshots/ss2.png?raw=true)
 
 
-  ![Screenshot 3](https://github.com/ashish88pal/csvUploadCN/blob/f96dd66bf424a60ab828597ea3ccfb61f1de9e03/screenshots/ss3.png?raw=true)
 
 
 
@@ -44,50 +47,35 @@ This project is a web-based application developed to enable users to create ques
 
   ## Folder Structure
 ```bash
-CSV_UPLOAD
-|   .gitignore
+polling-api
 |   index.js
 |   package-lock.json
 |   package.json
 |   README.md
 |
-+---assets
-|   +---css
-|   |       file_viewer.css
-|   |       header.css
-|   |       home.css
-|   |
-|   +---images
-|   |       bored.png
-|   |       logo.png
-|   |
-|   \---js
-|           file_viewer.js
-|           home.js
-|
 +---config
 |       mongoose.js
 |
 +---controllers
-|       file_controller.js
-|       home_controller.js
+|   \---api
+|       \---v1
+|               options_api.js
+|               questions_api.js
 |
 +---models
-|       csv.js
+|       option.js
+|       question.js
 |
 +---routes
-|       index.js
+|   |   index.js
+|   |
+|   \---api
+|       |   index.js
+|       |
+|       \---v1
+|               index.js
+|               options.js
+|               questions.js
 |
-+---screenshots
-|       ss1.png
-|       ss2.png
-|       ss3.png
-|
-+---uploads
-|   \---files
-|
-\---views
-        file_viewer.ejs
-        home.ejs
-        layout.ejs
+\---screenshots
 ```
